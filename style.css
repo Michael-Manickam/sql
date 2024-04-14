@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Added margin-bottom for spacing between containers */
+}
+
+.topic {
+    margin-bottom: 30px;
+}
+
+.topic h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.syntax {
+    background-color: #f4f4f4;
+    border-left: 4px solid #3c8dbc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+code {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    color: #333;
+}

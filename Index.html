@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL Topics Documentation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topic">
+            <h2>1. SQL Intro</h2>
+            <p><strong>Definition:</strong> Introduction to Structured Query Language used for managing relational databases.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column_name FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <!-- Repeat the structure for other topics -->
+        <div class="topic">
+            <h2>2. SQL Select</h2>
+            <p><strong>Definition:</strong> Retrieves data from a database.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>3. SQL Select Distinct</h2>
+            <p><strong>Definition:</strong> Filters duplicate values from a result set.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT DISTINCT column_name FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>4. SQL Where</h2>
+            <p><strong>Definition:</strong> Filters records based on specified conditions.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE condition;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>5. SQL Order By</h2>
+            <p><strong>Definition:</strong> Sorts the result set in ascending or descending order.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name ORDER BY column_name ASC|DESC;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>6. SQL And</h2>
+            <p><strong>Definition:</strong> Combines multiple conditions in a WHERE clause.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE condition1 AND condition2;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>7. SQL Or</h2>
+            <p><strong>Definition:</strong> Retrieves records that meet either of multiple conditions.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE condition1 OR condition2;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>8. SQL Not</h2>
+            <p><strong>Definition:</strong> Retrieves records that do not match a specified condition.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE NOT condition;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>9. SQL Insert Into</h2>
+            <p><strong>Definition:</strong> Adds new records into a table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>INSERT INTO table_name (column1, column2) VALUES (value1, value2);</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>10. SQL Null Values</h2>
+            <p><strong>Definition:</strong> Represents missing or unknown data in a database.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE column_name IS NULL;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>11. SQL Update</h2>
+            <p><strong>Definition:</strong> Modifies existing records in a table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>12. SQL Delete</h2>
+            <p><strong>Definition:</strong> Removes one or more records from a table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>DELETE FROM table_name WHERE condition;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>13. SQL Select Top</h2>
+            <p><strong>Definition:</strong> Retrieves a specific number of records from the top of a result set.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT TOP n column1, column2 FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>14. SQL Aggregate Functions</h2>
+            <p><strong>Definition:</strong> Performs calculations on a set of values and returns a single result.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT AVG(column_name) FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>15. SQL Min and Max</h2>
+            <p><strong>Definition:</strong> Returns the minimum or maximum value in a column.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT MIN(column_name) FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>16. SQL Count</h2>
+            <p><strong>Definition:</strong> Counts the number of records that meet a specified condition.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT COUNT(column_name) FROM table_name WHERE condition;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>17. SQL Sum</h2>
+            <p><strong>Definition:</strong> Calculates the sum of values in a column.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT SUM(column_name) FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>18. SQL Avg</h2>
+            <p><strong>Definition:</strong> Calculates the average value of a numeric column.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT AVG(column_name) FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>19. SQL Like</h2>
+            <p><strong>Definition:</strong> Retrieves records that match a specified pattern.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE column_name LIKE pattern;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>20. SQL Wildcards</h2>
+            <p><strong>Definition:</strong> Special characters used with the LIKE operator to match patterns.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE column_name LIKE 'a%';</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>21. SQL In</h2>
+            <p><strong>Definition:</strong> Checks if a value matches any value in a list.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE column_name IN (value1, value2, ...);</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>22. SQL Between</h2>
+            <p><strong>Definition:</strong> Retrieves records within a range of values.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table_name WHERE column_name BETWEEN value1 AND value2;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>23. SQL Aliases</h2>
+            <p><strong>Definition:</strong> Gives a table or column a temporary name for readability.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column_name AS alias_name FROM table_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>24. SQL Joins</h2>
+            <p><strong>Definition:</strong> Combines rows from two or more tables based on a related column.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>25. SQL Inner Join</h2>
+            <p><strong>Definition:</strong> Returns only the rows with matching values in both tables.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>26. SQL Left Join</h2>
+            <p><strong>Definition:</strong> Returns all rows from the left table and the matched rows from the right table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>27. SQL Right Join</h2>
+            <p><strong>Definition:</strong> Returns all rows from the right table and the matched rows from the left table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>28. SQL Full Join</h2>
+            <p><strong>Definition:</strong> Returns all rows when there is a match in either left or right table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 FULL JOIN table2 ON table1.column_name = table2.column_name;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>29. SQL Self Join</h2>
+            <p><strong>Definition:</strong> Joins a table with itself to compare rows within the same table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT a.column1, b.column2 FROM table_name a INNER JOIN table_name b ON a.common_column = b.common_column;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>30. SQL Union</h2>
+            <p><strong>Definition:</strong> Combines the result sets of two or more SELECT statements.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 FROM table1 UNION SELECT column1, column2 FROM table2;</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>31. SQL Group By</h2>
+            <p><strong>Definition:</strong> Groups rows with the same values into summary rows.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, COUNT(column2) FROM table_name GROUP BY column1;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>32. SQL Having</h2>
+            <p><strong>Definition:</strong> Filters records based on group conditions.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, COUNT(column2) FROM table_name GROUP BY column1 HAVING COUNT(column2) > value;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>33. SQL Exists</h2>
+            <p><strong>Definition:</strong> Checks for the existence of rows in a subquery.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1 FROM table_name WHERE EXISTS (SELECT * FROM another_table WHERE condition);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>34. SQL Any, All</h2>
+            <p><strong>Definition:</strong> Compares a value to a set of values using ANY or ALL operators.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1 FROM table_name WHERE column2 > ANY (SELECT column2 FROM another_table);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>35. SQL Select Into</h2>
+            <p><strong>Definition:</strong> Copies data from one table into a new table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, column2 INTO new_table FROM old_table;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>36. SQL Insert Into Select</h2>
+            <p><strong>Definition:</strong> Inserts data into a table from the result of a SELECT query.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>INSERT INTO table_name (column1, column2) SELECT column1, column2 FROM another_table WHERE condition;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>37. SQL Case</h2>
+            <p><strong>Definition:</strong> Adds conditional logic to SQL queries.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong></p>
+                <pre>
+        SELECT column_name,
+            CASE
+                WHEN condition1 THEN 'Result1'
+                WHEN condition2 THEN 'Result2'
+                ELSE 'Result3'
+            END
+        FROM table_name;
+                </pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>38. SQL Null Functions</h2>
+            <p><strong>Definition:</strong> Handles NULL values in SQL queries.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>SELECT column1, COALESCE(column2, default_value) FROM table_name;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>39. SQL Stored Procedures</h2>
+            <p><strong>Definition:</strong> Precompiled SQL code that can be reused.</p>
+            <div class="syntax">
+                <p><strong>Syntax for creating:</strong></p>
+                <pre>
+        CREATE PROCEDURE procedure_name
+        AS
+        BEGIN
+            SQL statements;
+        END;
+                </pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>40. SQL Comments</h2>
+            <p><strong>Definition:</strong> Adds comments to SQL code for documentation or clarity.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong></p>
+                <p>Single line comment: <code>-- Single line comment</code></p>
+                <p>Multi-line comment: <code>/* Multi-line comment */</code></p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>41. SQL Operators</h2>
+            <p><strong>Definition:</strong> Symbols used for arithmetic, comparison, and logical operations in SQL queries.</p>
+            <div class="syntax">
+                <p><strong>Syntax examples:</strong></p>
+                <ul>
+                    <li>Arithmetic operators: <code>+, -, *, /</code></li>
+                    <li>Comparison operators: <code>=, <>, &lt;, &gt;, &lt;=, &gt;=</code></li>
+                    <li>Logical operators: <code>AND, OR, NOT</code></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>42. SQL Create DB</h2>
+            <p><strong>Definition:</strong> Creates a new database in SQL.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE DATABASE database_name;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>43. SQL Drop DB</h2>
+            <p><strong>Definition:</strong> Deletes an existing database in SQL.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>DROP DATABASE database_name;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>44. SQL Backup DB</h2>
+            <p><strong>Definition:</strong> Creates a backup of a database.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>BACKUP DATABASE database_name TO disk = 'backup_location';</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>45. SQL Create Table</h2>
+            <p><strong>Definition:</strong> Creates a new table in a database.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong></p>
+                <pre><code>CREATE TABLE table_name (
+            column1 datatype,
+            column2 datatype,
+            ...
+        );
+        </code></pre>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>46. SQL Drop Table</h2>
+            <p><strong>Definition:</strong> Deletes an existing table from a database.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>DROP TABLE table_name;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>47. SQL Alter Table</h2>
+            <p><strong>Definition:</strong> Modifies an existing table structure.</p>
+            <div class="syntax">
+                <p><strong>Syntax examples:</strong></p>
+                <ul>
+                    <li>Add a new column: <code>ALTER TABLE table_name ADD column_name datatype;</code></li>
+                    <li>Modify column: <code>ALTER TABLE table_name ALTER COLUMN column_name datatype;</code></li>
+                    <li>Drop column: <code>ALTER TABLE table_name DROP COLUMN column_name;</code></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>48. SQL Constraints</h2>
+            <p><strong>Definition:</strong> Rules applied to columns to enforce data integrity.</p>
+            <div class="syntax">
+                <p><strong>Syntax examples:</strong></p>
+                <ul>
+                    <li>Primary Key: <code>CREATE TABLE table_name (column1 datatype PRIMARY KEY, ...);</code></li>
+                    <li>Foreign Key: <code>CREATE TABLE table_name (column1 datatype, column2 datatype, FOREIGN KEY (column1) REFERENCES other_table(column_name));</code></li>
+                    <li>Not Null: <code>CREATE TABLE table_name (column1 datatype NOT NULL, ...);</code></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>49. SQL Unique</h2>
+            <p><strong>Definition:</strong> Ensures that values in a column are unique.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE TABLE table_name (column1 datatype UNIQUE, ...);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>50. SQL Primary Key</h2>
+            <p><strong>Definition:</strong> Uniquely identifies each record in a table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE TABLE table_name (column1 datatype PRIMARY KEY, ...);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>51. SQL Foreign Key</h2>
+            <p><strong>Definition:</strong> Establishes a link between two tables based on a key.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE TABLE table_name (column1 datatype, column2 datatype, FOREIGN KEY (column1) REFERENCES other_table(column_name));</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>52. SQL Check</h2>
+            <p><strong>Definition:</strong> Defines a condition that values must meet for a column.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE TABLE table_name (column1 datatype CHECK (condition), ...);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>53. SQL Default</h2>
+            <p><strong>Definition:</strong> Sets a default value for a column when no value is specified.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE TABLE table_name (column1 datatype DEFAULT default_value, ...);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>54. SQL Index</h2>
+            <p><strong>Definition:</strong> Improves the speed of data retrieval operations on a table.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE INDEX index_name ON table_name (column_name);</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>55. SQL Auto Increment</h2>
+            <p><strong>Definition:</strong> Automatically generates a unique value for a column.</p>
+            <div class="syntax">
+                <p><strong>Syntax (MySQL):</strong> <code>CREATE TABLE table_name (column_name INT AUTO_INCREMENT PRIMARY KEY, ...);</code></p>
+                <p><strong>Syntax (PostgreSQL):</strong> <code>CREATE SEQUENCE sequence_name;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>56. SQL Dates</h2>
+            <p><strong>Definition:</strong> Deals with date and time data types and functions.</p>
+            <div class="syntax">
+                <p><strong>Examples:</strong></p>
+                <ul>
+                    <li>Current date: <code>SELECT CURRENT_DATE;</code></li>
+                    <li>Current time: <code>SELECT CURRENT_TIME;</code></li>
+                    <li>Date functions: <code>SELECT DATE_ADD(date_column, INTERVAL 1 DAY) FROM table_name;</code></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>57. SQL Views</h2>
+            <p><strong>Definition:</strong> Virtual tables derived from one or more tables.</p>
+            <div class="syntax">
+                <p><strong>Syntax:</strong> <code>CREATE VIEW view_name AS SELECT column1, column2 FROM table_name WHERE condition;</code></p>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>58. SQL Injection</h2>
+            <p><strong>Definition:</strong> Security vulnerability where malicious SQL statements are inserted into input fields.</p>
+            <div class="syntax">
+                <p><strong>Example (vulnerable code):</strong></p>
+                <code>SELECT * FROM users WHERE username = 'input_username' AND password = 'input_password';</code>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>59. SQL Hosting</h2>
+            <p><strong>Definition:</strong> Services that provide SQL database hosting and management.</p>
+            <div class="syntax">
+                <p><strong>Example hosting providers:</strong></p>
+                <ul>
+                    <li>Amazon RDS</li>
+                    <li>Google Cloud SQL</li>
+                    <li>Microsoft Azure SQL Database</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>60. SQL Data Types</h2>
+            <p><strong>Definition:</strong> Specifies the type of data that can be stored in a column.</p>
+            <div class="syntax">
+                <p><strong>Syntax examples:</strong></p>
+                <ul>
+                    <li>Numeric data types: <code>INT, DECIMAL, FLOAT</code></li>
+                    <li>Character data types: <code>CHAR, VARCHAR</code></li>
+                    <li>Date and time data types: <code>DATE, TIMESTAMP</code></li>
+                </ul>
+            </div>
+        </div>        
+
+        <!-- Continue adding topics following the same structure -->
+    </div>
+
+</body>
+</html>
